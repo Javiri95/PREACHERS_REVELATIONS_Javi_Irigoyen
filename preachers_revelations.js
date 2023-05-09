@@ -286,7 +286,18 @@ const data = {
   }
   
   //1.- Mostrar listado de armas (nombre) y los alineamientos que pueden usarlas.
-  
+
+          console.log("1.");
+
+
+          for (let i = 0; i < data.weapons.length; i++)
+          {
+              console.log("Armas : " + data.weapons[i].name + " / Sus alineamientos : " + data.weapons[i].alignment);
+          }
+
+          
+        console.log("");
+
   //2.- mostrar el alias de los Héroes cuyo nivel es mayor que 20 y que su alineamiento contenga el término "Chaotic".
   
   //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
