@@ -325,16 +325,17 @@ const data = {
         console.log(""); 
   //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
     console.log("3.");
-      
-      //  for(let i = 0;i < data.epicHeroes.length; i++)
-      //  { 
-      //   console.log( data.epicHeroes[i].name  )
-      //  }
+    console.log("Lista de Héroes"); 
+    console.log("");
+       for(let i = 0;i < data.epicHeroes.length; i++)
+       { 
+        console.log( "Héroe : " +  data.epicHeroes[i].name  );
+       }
 
 
-      //  for (let i = 0; i < data.epicHeroes.length.armor; i++)
+      //  for (let i = 0; i < data.epicHeroes.armor.defense.length; i++)
       //  {
-      //   if (data.epicHeroes.length.armor[i].defentsa)
+      //   if (data.epicHeroes.armor[i].defense.length)
       //   {
       //     kont++;
       //   }
@@ -355,7 +356,7 @@ const data = {
       {
         if(data.weapons[i].price < data.epicHeroes[7].gold)
         {
-          console.log( "Weapons availables for Chonifer : " + data.weapons[i].name);
+          console.log( "Weapon availables for Chonifer : " + data.weapons[i].name);
         }
       }
 
@@ -367,11 +368,20 @@ const data = {
   //Los artículos se irán comprando en el orden en el que están expuestos. Mostrar el oro restante.
   console.log("4.1");
 
+    
+    let kont = data.epicHeroes[7].gold - data.weapons[0].price ;
+    
+   console.log(kont + " es el dinero restante por comprar : " + data.weapons[0].name );
 
+    let kont2 = kont - data.weapons[1].price;
 
+  console.log(kont2 + " es el dinero restante por comprar : " + data.weapons[1].name );
 
+   let kont3 = kont2 - data.weapons[2].price;
 
+   console.log(kont3 + " es el dinero restante por comprar : " + data.weapons[2].name );
 
+   console.log(data.weapons[2].name + " es la última arma que se podrá comprar con el oro disponible")
 
 
 
@@ -382,10 +392,13 @@ const data = {
   //5.- Mostrar todas las piezas de armadura con su defensa, sin repeticiones.
   console.log("5.");
 
- 
 
 
 
+      // for (i = 0; i < data.epicHeroes.armor[0].length ; i++)
+      // {
+      //   console.log(data.epicHeroes.armor[i].name);
+      // }
 
 
 
