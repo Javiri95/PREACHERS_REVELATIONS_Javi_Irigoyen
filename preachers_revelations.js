@@ -320,7 +320,7 @@ const data = {
 
         for (let i = 0; i < data.epicHeroes.length; i++)
           {
-            if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment === "Chaotic")
+            if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment === "Chaotic");
              {
               console.log("Alias : " + data.epicHeroes[i].alias );
              }
@@ -336,8 +336,9 @@ const data = {
 
 
 
-  //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
-    console.log("3.");
+  // 3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
+
+     console.log("3.");
     console.log("Lista de Héroes"); 
     console.log("");
        for(let i = 0;i < data.epicHeroes.length; i++)
@@ -363,16 +364,30 @@ let sumaDefensa = 0;
            sumaDefensa ++;  
           
         }
-       }
+       } 
      
-
-console.log( "La suma total de defensa que proporcionan lar armaduras es : " + sumaDefensa);
-
+  console.log( "La suma total de defensa que proporcionan lar armaduras es : " + sumaDefensa);
 
 
 
-      
+  console.log("");
 
+
+
+       const heroes = data.epicHeroes;
+
+       heroes.forEach(hero => {
+         console.log(`El héroe es : ${hero.name}`);
+         let defense = 0;
+         hero.armor.forEach(armor => {
+          defense += armor.defense;
+         })
+         console.log(`La defensa total del héroe es ${defense}`);
+       })
+
+
+
+    
 
   console.log("");
 
