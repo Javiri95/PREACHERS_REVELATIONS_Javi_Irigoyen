@@ -299,8 +299,32 @@ const data = {
         console.log("");
 
   //2.- mostrar el alias de los Héroes cuyo nivel es mayor que 20 y que su alineamiento contenga el término "Chaotic".
-  
+        console.log("2.");
+            
+        
+        for (let i = 0; i < data.epicHeroes.length; i++)
+          {
+            if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment.includes ("Chaotic"))
+             {
+              console.log("Alias : " + data.epicHeroes[i].alias );
+             }
+          }
+        
+        console.log(""); 
+
+
   //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
+      
+      //  for(let i = 0; < data.epicHeroes.length; i++)
+      //  {
+
+      //  }
+    
+
+
+
+
+
   
   //4.- Mostrar la lista de armas que puede utilizar el Héroe alias "Chonifer" siempre y cuando pueda pagarlas con el oro que dispone. 
   //Los artículos se irán comprando en el orden en el que están expuestos. Mostrar el oro restante.
