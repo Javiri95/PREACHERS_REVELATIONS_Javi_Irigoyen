@@ -320,7 +320,7 @@ const data = {
 
         for (let i = 0; i < data.epicHeroes.length; i++)
           {
-            if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment.includes ("Chaotic"))
+            if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment === "Chaotic")
              {
               console.log("Alias : " + data.epicHeroes[i].alias );
              }
