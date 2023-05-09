@@ -340,14 +340,41 @@ const data = {
     console.log("3.");
     console.log("Lista de Héroes"); 
     console.log("");
-      
+       for(let i = 0;i < data.epicHeroes.length; i++)
+       { 
+        console.log( "Héroe : " +  data.epicHeroes[i].name  );
+       }
+
+   console.log("");
+
+
+
+
+ 
+let sumaDefensa = 0;
+
+       for ( let i = 0 ; i < data.epicHeroes.length ; i++)
+       {
+        for (let k = 0 ; k < data.epicHeroes[i].armor.length; k++)
+        { 
+         for(let j = 0; j < data.epicHeroes[i].armor[k].defense; j++)
+
+
+           sumaDefensa ++;  
+          
+        }
+       }
+     
+
+console.log( "La suma total de defensa que proporcionan lar armaduras es : " + sumaDefensa);
+
+
+
+
       
 
 
   console.log("");
-
-
-
 
 
 
@@ -388,7 +415,7 @@ const data = {
 
    console.log(data.weapons[2].name + " es la última arma que se podrá comprar con el oro disponible")
 
-
+   
 
 
 
