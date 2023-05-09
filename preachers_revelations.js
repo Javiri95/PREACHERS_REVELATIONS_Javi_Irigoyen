@@ -285,6 +285,9 @@ const data = {
     ]
   }
   
+
+
+
   //1.- Mostrar listado de armas (nombre) y los alineamientos que pueden usarlas.
           console.log("1.");
 
@@ -302,6 +305,12 @@ const data = {
 
           
         console.log("");
+
+
+
+
+
+
   //2.- mostrar el alias de los Héroes cuyo nivel es mayor que 20 y que su alineamiento contenga el término "Chaotic".
         console.log("2.");
             
@@ -323,29 +332,25 @@ const data = {
 
 
         console.log(""); 
+
+
+
+
   //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
     console.log("3.");
     console.log("Lista de Héroes"); 
     console.log("");
-       for(let i = 0;i < data.epicHeroes.length; i++)
-       { 
-        console.log( "Héroe : " +  data.epicHeroes[i].name  );
-       }
-
-
-      //  for (let i = 0; i < data.epicHeroes.armor.defense.length; i++)
-      //  {
-      //   if (data.epicHeroes.armor[i].defense.length)
-      //   {
-      //     kont++;
-      //   }
-      //   console.log(kont);
-      //  }
-
+      
       
 
 
   console.log("");
+
+
+
+
+
+
   //4.- Mostrar la lista de armas que puede utilizar el Héroe alias "Chonifer" siempre y cuando pueda pagarlas con el oro que dispone. 
     console.log("4.");
     
@@ -389,22 +394,35 @@ const data = {
 
 
   console.log("");
+
+
+
+
+
+
+
   //5.- Mostrar todas las piezas de armadura con su defensa, sin repeticiones.
   console.log("5.");
 
 
+  
 
+    for ( let i = 0 ; i < data.epicHeroes.length ; i++)
+    {
+     for (let k = 0 ; k < data.epicHeroes[i].armor.length; k++)
+     {
 
-      // for (i = 0; i < data.epicHeroes.armor[0].length ; i++)
-      // {
-      //   console.log(data.epicHeroes.armor[i].name);
-      // }
-
-
-
-
+      console.log( "Armor name : " + data.epicHeroes[i].armor[k].name + " ///  Armor defense : " + data.epicHeroes[i].armor[k].defense);
+     }
+       
+    }
 
 
   console.log("");
 
   
+ 
+ 
+
+ 
+
