@@ -286,8 +286,10 @@ const data = {
   }
   
   //1.- Mostrar listado de armas (nombre) y los alineamientos que pueden usarlas.
-
           console.log("1.");
+
+
+
 
 
           for (let i = 0; i < data.weapons.length; i++)
@@ -295,13 +297,18 @@ const data = {
               console.log("Armas : " + data.weapons[i].name + " / Sus alineamientos : " + data.weapons[i].alignment);
           }
 
+
+
+
           
         console.log("");
-
   //2.- mostrar el alias de los Héroes cuyo nivel es mayor que 20 y que su alineamiento contenga el término "Chaotic".
         console.log("2.");
             
         
+
+
+
         for (let i = 0; i < data.epicHeroes.length; i++)
           {
             if(data.epicHeroes[i].level > 20 && data.epicHeroes[i].alignment.includes ("Chaotic"))
@@ -310,23 +317,81 @@ const data = {
              }
           }
         
+
+
+
+
+
         console.log(""); 
-
-
   //3.- Mostrar la lista de Héroes (nombre) y la suma total de defensa que proporciona la armadura.
+    console.log("3.");
       
-      //  for(let i = 0; < data.epicHeroes.length; i++)
-      //  {
-
+      //  for(let i = 0;i < data.epicHeroes.length; i++)
+      //  { 
+      //   console.log( data.epicHeroes[i].name  )
       //  }
+
+
+      //  for (let i = 0; i < data.epicHeroes.length.armor; i++)
+      //  {
+      //   if (data.epicHeroes.length.armor[i].defentsa)
+      //   {
+      //     kont++;
+      //   }
+      //   console.log(kont);
+      //  }
+
+      
+
+
+  console.log("");
+  //4.- Mostrar la lista de armas que puede utilizar el Héroe alias "Chonifer" siempre y cuando pueda pagarlas con el oro que dispone. 
+    console.log("4.");
     
 
 
+       
+      for( i = 0 ; i < data.weapons.length;  i++)
+      {
+        if(data.weapons[i].price < data.epicHeroes[7].gold)
+        {
+          console.log( "Weapons availables for Chonifer : " + data.weapons[i].name);
+        }
+      }
 
 
 
-  
-  //4.- Mostrar la lista de armas que puede utilizar el Héroe alias "Chonifer" siempre y cuando pueda pagarlas con el oro que dispone. 
+
+
+    console.log("");
   //Los artículos se irán comprando en el orden en el que están expuestos. Mostrar el oro restante.
-  
+  console.log("4.1");
+
+
+
+
+
+
+
+
+
+
+
+
+  console.log("");
   //5.- Mostrar todas las piezas de armadura con su defensa, sin repeticiones.
+  console.log("5.");
+
+ 
+
+
+
+
+
+
+
+
+
+  console.log("");
+
+  
